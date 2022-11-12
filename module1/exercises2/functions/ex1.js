@@ -6,4 +6,3 @@ function doble(num) {
 
 doble();
 
-console.log(doble(2));

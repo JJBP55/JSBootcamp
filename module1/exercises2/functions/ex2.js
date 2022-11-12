@@ -5,5 +5,3 @@ function cuadrado(num){
 }
 
 cuadrado();
-
-console.log(cuadrado(2));

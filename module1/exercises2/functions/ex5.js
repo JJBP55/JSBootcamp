@@ -8,7 +8,7 @@ const personas = [
     { nombre: 'Pedro', edad: 20 },
     { nombre: 'Pablo', edad: 15 },
     { nombre: 'Laura', edad: 19 }
-]
+];
 
 function mayoresDeEdad(array){
     let mayores = [];
@@ -24,26 +24,26 @@ function mayoresDeEdad(array){
 
 function masJoven(array){
     let menor = 99;
-    let po
+    let posicion;
     for(let i = 0; i < array.length; i++){
         if(array[i].edad < menor){
             menor = array[i].edad;
             posicion = i;
         }
     }
-    return `El mas joven es: ${array[posicion].nombre} con ${array[posicion].edad} años.`;
+    return `El mas joven es ${array[posicion].nombre} con ${array[posicion].edad} años.`;
 }
 
 function masAdulto(array){
     let mayor = 0;
-    let po
+    let posicion;
     for(let i = 0; i < array.length; i++){
         if(array[i].edad > mayor){
             mayor = array[i].edad;
             posicion = i;
         }
     }
-    return `El mas adulto es: ${array[posicion].nombre} con ${array[posicion].edad} años.`;
+    return `El mas adulto es ${array[posicion].nombre} con ${array[posicion].edad} años.`;
 }
 
 mayoresDeEdad(personas);

@@ -16,3 +16,4 @@ const arrayNuevo = array.filter((element) => {
 
 console.log(arrayNuevo);
 
+//const arrayNuevo = array.filter((element) => element.charAt(0) === 'a' || 'A');

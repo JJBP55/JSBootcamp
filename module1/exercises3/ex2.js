@@ -5,3 +5,41 @@
 // const pin = prompt('Introduce el PIN:');
 
 // Haz el mismo ejercicio pero ahora el usuario tiene intentos infinitos hasta que acierte el PIN o escriba salir.
+
+let i = 0;
+let salir = false;
+let password = 1863;
+
+
+
+while((i < 4) || (salir !== false)){
+     const pin = prompt('Introduce el PIN:')
+     if(pin == password){
+         console.log("¡Eso fue correcto!");
+         salir == true;
+     }
+     else{
+         console.log("Lo siento, eso estaba mal." );
+     }  
+     i++;
+};
+
+// while(salir !== false){
+
+//     const pin = prompt('Introduce el PIN:');
+    
+//     if(pin == password){
+//         console.log("¡Eso fue correcto!");
+//         salir == true;
+//     }
+//     else{
+//         console.log("Lo siento, eso estaba mal." );
+//     }
+    
+//     // const seguir = prompt('Introduce 1 si quieres salir');
+    
+//     // if(seguir == 1){
+//     //     salir == true
+//     // }
+
+// };
